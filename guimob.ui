@@ -1,0 +1,1386 @@
+<ui version="4.0" >
+ <class>GuiMob</class>
+ <widget class="QDialog" name="GuiMob" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>7</hsizetype>
+    <vsizetype>5</vsizetype>
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>16</width>
+    <height>16</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="mp_gbMain" >
+     <property name="minimumSize" >
+      <size>
+       <width>16</width>
+       <height>190</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Generale</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="2" column="0" colspan="5" >
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="mp_labelLong" >
+          <property name="minimumSize" >
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Long</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mp_leLong" >
+          <property name="minimumSize" >
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="3" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="2" column="1" >
+         <widget class="QLineEdit" name="mp_leXPBonus" >
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maxLength" >
+           <number>7</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="mp_labelThac0" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Thac0</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" >
+         <widget class="QLabel" name="mp_labelHPBonus" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>HP Bonus</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" >
+         <widget class="QLabel" name="mp_labelXPBonus" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>XP Bonus</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QLineEdit" name="mp_leHPBonus" >
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maxLength" >
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QSpinBox" name="mp_sbThac0" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum" >
+           <number>100</number>
+          </property>
+          <property name="minimum" >
+           <number>-30</number>
+          </property>
+          <property name="value" >
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="2" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="0" column="0" >
+         <widget class="QLabel" name="mp_labelAlignment" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Allignment</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QLineEdit" name="mp_leAlignment" >
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maxLength" >
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" >
+         <widget class="QLineEdit" name="mp_leGold" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maxLength" >
+           <number>6</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" >
+         <widget class="QLabel" name="mp_labelGold" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Gold</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="mp_labelArmor" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Armor</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QSpinBox" name="mp_sbArmor" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum" >
+           <number>10</number>
+          </property>
+          <property name="minimum" >
+           <number>-10</number>
+          </property>
+          <property name="value" >
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="2" column="1" >
+         <widget class="QComboBox" name="mp_comboDefaultPosition" >
+          <property name="minimumSize" >
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" >
+         <widget class="QLabel" name="mp_labelDefaultPosition" >
+          <property name="minimumSize" >
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Default Pos.</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="mp_labelLoadPosition" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Load Pos.</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QComboBox" name="mp_comboLoadPosition" >
+          <property name="minimumSize" >
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" >
+         <widget class="QLabel" name="mp_labelRace" >
+          <property name="minimumSize" >
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Race</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QComboBox" name="mp_comboRace" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" colspan="5" >
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="mp_labelShort" >
+          <property name="minimumSize" >
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Short</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mp_leShort" >
+          <property name="minimumSize" >
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mp_labelGender" >
+          <property name="minimumSize" >
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Gender</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="mp_comboGender" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" colspan="5" >
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="mp_labelVNumber" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>VNumber</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mp_leVNumber" >
+          <property name="minimumSize" >
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="focusPolicy" >
+           <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="maxLength" >
+           <number>5</number>
+          </property>
+          <property name="readOnly" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mp_labelName" >
+          <property name="minimumSize" >
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Name</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="mp_leName" >
+          <property name="minimumSize" >
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="mp_labelType" >
+          <property name="minimumSize" >
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Type</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="mp_comboType" >
+          <property name="minimumSize" >
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>140</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="4" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="mp_labelDamage" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Damage</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" >
+         <widget class="QLineEdit" name="mp_leXP" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="maxLength" >
+           <number>7</number>
+          </property>
+          <property name="readOnly" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" >
+         <widget class="QLabel" name="mp_labelXP" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Avg. XP</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QLineEdit" name="mp_leHP" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="maxLength" >
+           <number>5</number>
+          </property>
+          <property name="readOnly" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" >
+         <widget class="QLineEdit" name="mp_leDamage" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy" >
+           <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="maxLength" >
+           <number>10</number>
+          </property>
+          <property name="readOnly" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" >
+         <widget class="QLabel" name="mp_labelHP" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Avg. HP</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="1" >
+       <layout class="QGridLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item row="1" column="1" >
+         <widget class="QSpinBox" name="mp_sbAttacks" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum" >
+           <number>12</number>
+          </property>
+          <property name="minimum" >
+           <number>0</number>
+          </property>
+          <property name="value" >
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" >
+         <widget class="QLabel" name="mp_labelLevel" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Level</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" >
+         <widget class="QLabel" name="mp_labelAttacks" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text" >
+           <string>Attacks</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" >
+         <widget class="QSpinBox" name="mp_sbLevel" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>55</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum" >
+           <number>60</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+     <widget class="QWidget" native="1" name="widget" >
+      <property name="geometry" >
+       <rect>
+        <x>476</x>
+        <y>99</y>
+        <width>132</width>
+        <height>68</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="mp_gbFlags" >
+     <property name="minimumSize" >
+      <size>
+       <width>16</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Flags</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="mp_labelNewActs" >
+        <property name="minimumSize" >
+         <size>
+          <width>65</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>New Acts</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" >
+       <widget class="QToolButton" name="mp_tbAffects" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" >
+       <widget class="QToolButton" name="mp_tbNewActs" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="mp_leNewActs" >
+        <property name="minimumSize" >
+         <size>
+          <width>400</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="focusPolicy" >
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="dragEnabled" >
+         <bool>true</bool>
+        </property>
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <widget class="QToolButton" name="mp_tbActs" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="mp_leActs" >
+        <property name="minimumSize" >
+         <size>
+          <width>400</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="focusPolicy" >
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="dragEnabled" >
+         <bool>true</bool>
+        </property>
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="mp_labelActs" >
+        <property name="minimumSize" >
+         <size>
+          <width>65</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Acts</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QLineEdit" name="mp_leAffects" >
+        <property name="minimumSize" >
+         <size>
+          <width>400</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="focusPolicy" >
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="dragEnabled" >
+         <bool>true</bool>
+        </property>
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="mp_labelAffects" >
+        <property name="minimumSize" >
+         <size>
+          <width>65</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Affects</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="QLineEdit" name="mp_leAffects2" />
+      </item>
+      <item row="3" column="0" >
+       <widget class="QLabel" name="mp_labelAffects2" >
+        <property name="text" >
+         <string>Affects2</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" >
+       <widget class="QToolButton" name="mp_tbAffects2" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="mp_twMisc" >
+     <property name="minimumSize" >
+      <size>
+       <width>0</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="mp_wResistances" >
+      <attribute name="title" >
+       <string>Resistenze</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="2" column="0" >
+        <widget class="QLabel" name="mp_labelSusceptibilities" >
+         <property name="minimumSize" >
+          <size>
+           <width>65</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Suscettibilita'</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLineEdit" name="mp_leImmunities" >
+         <property name="minimumSize" >
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="focusPolicy" >
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="dragEnabled" >
+          <bool>true</bool>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <widget class="QLineEdit" name="mp_leResistances" >
+         <property name="minimumSize" >
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="focusPolicy" >
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="dragEnabled" >
+          <bool>true</bool>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QToolButton" name="mp_tbImmunities" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" >
+        <widget class="QToolButton" name="mp_tbResistances" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4" >
+        <widget class="QSpinBox" name="mp_sbSpellPower" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>0</hsizetype>
+           <vsizetype>0</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>55</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximum" >
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QLineEdit" name="mp_leSusceptibilities" >
+         <property name="minimumSize" >
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="focusPolicy" >
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="dragEnabled" >
+          <bool>true</bool>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="mp_labelImmunities" >
+         <property name="minimumSize" >
+          <size>
+           <width>65</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Immunita'</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" >
+        <widget class="QLabel" name="mp_labelSpellpower" >
+         <property name="enabled" >
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Spellpower</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QLabel" name="mp_labelResistances" >
+         <property name="minimumSize" >
+          <size>
+           <width>65</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Resistenza</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" >
+        <widget class="QToolButton" name="mp_tbSusceptibilities" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" >
+        <widget class="QLabel" name="mp_labelAbsorbDam" >
+         <property name="text" >
+          <string>Absorb dam</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4" >
+        <widget class="QSpinBox" name="mp_sbAbsorbDam" >
+         <property name="maximum" >
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mp_wDescription" >
+      <attribute name="title" >
+       <string>Descrizione</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>8</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTextEdit" name="mp_teDescription" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mp_wRoomSound" >
+      <attribute name="title" >
+       <string>Suono nella sua stanza</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>8</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTextEdit" name="mp_teRoomSound" />
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mp_wNearSound" >
+      <attribute name="title" >
+       <string>Suono nelle stanze adiacenti</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>8</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTextEdit" name="mp_teNearSound" />
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mp_pbPrevMob" >
+       <property name="maximumSize" >
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>&lt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbInit" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Init</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbNextMob" >
+       <property name="maximumSize" >
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>></string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>91</width>
+         <height>23</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbOk" >
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbSave" >
+       <property name="text" >
+        <string>Applica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbRestore" >
+       <property name="text" >
+        <string>Ripristina</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCancel" >
+       <property name="text" >
+        <string>Annulla</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="9" />
+ <tabstops>
+  <tabstop>mp_leVNumber</tabstop>
+  <tabstop>mp_leName</tabstop>
+  <tabstop>mp_comboType</tabstop>
+  <tabstop>mp_leShort</tabstop>
+  <tabstop>mp_comboGender</tabstop>
+  <tabstop>mp_leLong</tabstop>
+  <tabstop>mp_comboRace</tabstop>
+  <tabstop>mp_sbLevel</tabstop>
+  <tabstop>mp_leAlignment</tabstop>
+  <tabstop>mp_leHPBonus</tabstop>
+  <tabstop>mp_comboLoadPosition</tabstop>
+  <tabstop>mp_sbAttacks</tabstop>
+  <tabstop>mp_sbArmor</tabstop>
+  <tabstop>mp_sbThac0</tabstop>
+  <tabstop>mp_leDamage</tabstop>
+  <tabstop>mp_comboDefaultPosition</tabstop>
+  <tabstop>mp_leGold</tabstop>
+  <tabstop>mp_leXPBonus</tabstop>
+  <tabstop>mp_tbActs</tabstop>
+  <tabstop>mp_tbAffects</tabstop>
+  <tabstop>mp_twMisc</tabstop>
+  <tabstop>mp_tbResistances</tabstop>
+  <tabstop>mp_tbImmunities</tabstop>
+  <tabstop>mp_tbSusceptibilities</tabstop>
+  <tabstop>mp_teDescription</tabstop>
+  <tabstop>mp_teRoomSound</tabstop>
+  <tabstop>mp_teNearSound</tabstop>
+  <tabstop>mp_pbPrevMob</tabstop>
+  <tabstop>mp_pbNextMob</tabstop>
+  <tabstop>mp_pbOk</tabstop>
+  <tabstop>mp_pbSave</tabstop>
+  <tabstop>mp_pbRestore</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

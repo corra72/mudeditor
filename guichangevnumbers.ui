@@ -1,0 +1,272 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiChangeVNumbers</class>
+ <widget class="QDialog" name="GuiChangeVNumbers" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>487</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <property name="modal" >
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>8</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="mp_gbMain" >
+     <property name="minimumSize" >
+      <size>
+       <width>16</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Rinumera le entita'</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="2" column="1" >
+       <widget class="QLineEdit" name="mp_leFromNew" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="mp_labelFromNew" >
+        <property name="text" >
+         <string>Nuovo VNumber Iniziale</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="mp_leTo" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="mp_labelTo" >
+        <property name="text" >
+         <string>Al VNumber</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="mp_leFrom" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="mp_labelFrom" >
+        <property name="text" >
+         <string>Dal VNumber</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QGroupBox" name="mp_gbOptions" >
+     <property name="minimumSize" >
+      <size>
+       <width>190</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Entita' da rinumerare</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="mp_cbRooms" >
+        <property name="text" >
+         <string>Stanze</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mp_cbMobs" >
+        <property name="text" >
+         <string>Mobs</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mp_cbItems" >
+        <property name="text" >
+         <string>Oggetti</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mp_cbShops" >
+        <property name="text" >
+         <string>Negozi</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mp_cbComments" >
+        <property name="text" >
+         <string>Commenti nelle zone</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QProgressBar" name="mp_progress" >
+     <property name="value" >
+      <number>0</number>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignLeading</set>
+     </property>
+     <property name="textVisible" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2" >
+    <widget class="QGroupBox" name="mp_gbStatus" >
+     <property name="title" >
+      <string>Status</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="QTextEdit" name="mp_teStatus" />
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbStart" >
+       <property name="text" >
+        <string>Avvia</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbClose" >
+       <property name="text" >
+        <string>Chiudi</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>mp_leFrom</tabstop>
+  <tabstop>mp_leTo</tabstop>
+  <tabstop>mp_leFromNew</tabstop>
+  <tabstop>mp_cbRooms</tabstop>
+  <tabstop>mp_cbMobs</tabstop>
+  <tabstop>mp_cbItems</tabstop>
+  <tabstop>mp_cbShops</tabstop>
+  <tabstop>mp_cbComments</tabstop>
+  <tabstop>mp_teStatus</tabstop>
+  <tabstop>mp_pbStart</tabstop>
+  <tabstop>mp_pbClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

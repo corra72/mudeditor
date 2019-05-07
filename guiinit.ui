@@ -1,0 +1,159 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiInit</class>
+ <widget class="QDialog" name="GuiInit" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>466</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Inizializzazioni - TS Kreator</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" colspan="5" >
+    <widget class="QGroupBox" name="mp_gbInit" >
+     <property name="title" >
+      <string/>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="1" >
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QToolButton" name="mp_tbAdd" >
+          <property name="text" >
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="mp_tbCopy" >
+          <property name="text" >
+           <string>:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="mp_tbEdit" >
+          <property name="text" >
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="mp_tbRemove" >
+          <property name="text" >
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" >
+       <widget class="MyQt::TreeWidget" name="mp_twInits" />
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="4" >
+    <widget class="QPushButton" name="mp_pbCancel" >
+     <property name="text" >
+      <string>Annulla</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="mp_pbOk" >
+     <property name="text" >
+      <string>Ok</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" >
+    <widget class="QPushButton" name="mp_pbSave" >
+     <property name="text" >
+      <string>Applica</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>40</width>
+       <height>23</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="3" >
+    <widget class="QPushButton" name="mp_pbRestore" >
+     <property name="text" >
+      <string>Ripristina</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>MyQt::TreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>myqt.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>mp_tbAdd</tabstop>
+  <tabstop>mp_tbCopy</tabstop>
+  <tabstop>mp_tbEdit</tabstop>
+  <tabstop>mp_tbRemove</tabstop>
+  <tabstop>mp_pbOk</tabstop>
+  <tabstop>mp_pbSave</tabstop>
+  <tabstop>mp_pbRestore</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

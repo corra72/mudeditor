@@ -1,0 +1,334 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiArea</class>
+ <widget class="QMainWindow" name="GuiArea" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="2" column="0" >
+     <widget class="QFrame" name="frame" >
+      <property name="sizePolicy" >
+       <sizepolicy>
+        <hsizetype>1</hsizetype>
+        <vsizetype>5</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize" >
+       <size>
+        <width>110</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="maximumSize" >
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>8</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="mp_pbNew" >
+         <property name="text" >
+          <string>Crea</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mp_pbEdit" >
+         <property name="text" >
+          <string>Modifica</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mp_pbClone" >
+         <property name="text" >
+          <string>Clona</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="mp_pbRemove" >
+         <property name="text" >
+          <string>Elimina</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QFrame" name="mp_frameVisual" >
+      <property name="sizePolicy" >
+       <sizepolicy>
+        <hsizetype>1</hsizetype>
+        <vsizetype>5</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize" >
+       <size>
+        <width>110</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="autoFillBackground" >
+       <bool>false</bool>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="mp_gbChangeView" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>1</hsizetype>
+           <vsizetype>5</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize" >
+          <size>
+           <width>90</width>
+           <height>135</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>110</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="autoFillBackground" >
+          <bool>true</bool>
+         </property>
+         <property name="title" >
+          <string/>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignHCenter</set>
+         </property>
+         <property name="flat" >
+          <bool>false</bool>
+         </property>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>8</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QRadioButton" name="mp_rbViewRooms" >
+            <property name="text" >
+             <string>Stanze</string>
+            </property>
+            <property name="checked" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mp_rbViewMobs" >
+            <property name="text" >
+             <string>Mobs</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mp_rbViewItems" >
+            <property name="text" >
+             <string>Oggetti</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mp_rbViewShops" >
+            <property name="text" >
+             <string>Negozi</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mp_rbViewZones" >
+            <property name="text" >
+             <string>Zone</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" >
+     <spacer>
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" >
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item rowspan="3" row="1" column="1" >
+     <widget class="QTreeWidget" name="mp_twObjectList" >
+      <property name="rootIsDecorated" >
+       <bool>false</bool>
+      </property>
+      <property name="itemsExpandable" >
+       <bool>false</bool>
+      </property>
+      <property name="columnCount" >
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="mp_labelFile" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>300</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="frameShape" >
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow" >
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text" >
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="mp_tbChangeFile" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" >
+     <widget class="QLabel" name="mp_labelPage" >
+      <property name="sizePolicy" >
+       <sizepolicy>
+        <hsizetype>1</hsizetype>
+        <vsizetype>5</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize" >
+       <size>
+        <width>110</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text" >
+       <string>Stanze  </string>
+      </property>
+      <property name="alignment" >
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="indent" >
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>mp_twObjectList</tabstop>
+  <tabstop>mp_tbChangeFile</tabstop>
+  <tabstop>mp_rbViewRooms</tabstop>
+  <tabstop>mp_rbViewMobs</tabstop>
+  <tabstop>mp_rbViewItems</tabstop>
+  <tabstop>mp_rbViewShops</tabstop>
+  <tabstop>mp_rbViewZones</tabstop>
+  <tabstop>mp_pbNew</tabstop>
+  <tabstop>mp_pbEdit</tabstop>
+  <tabstop>mp_pbClone</tabstop>
+  <tabstop>mp_pbRemove</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

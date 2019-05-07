@@ -1,0 +1,278 @@
+<ui version="4.0" >
+ <class>GuiMultipleModify</class>
+ <widget class="QDialog" name="GuiMultipleModify" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Modifiche Multiple</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabRoom" >
+      <attribute name="title" >
+       <string>Stanze</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbRoomFlags" >
+           <property name="text" >
+            <string>Flags</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="listRoom" >
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabMob" >
+      <attribute name="title" >
+       <string>Mob</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbActs" >
+           <property name="text" >
+            <string>Acts</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbNewActs" >
+           <property name="text" >
+            <string>New Acts</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAffects" >
+           <property name="text" >
+            <string>Affects</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAffects2" >
+           <property name="text" >
+            <string>Affects 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="listMob" >
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabObj" >
+      <attribute name="title" >
+       <string>Oggetti</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbObjFlags" >
+           <property name="text" >
+            <string>Flags</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbObjNewFlags" >
+           <property name="text" >
+            <string>NewFlags</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="listObj" >
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>1</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>GuiMultipleModify</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>GuiMultipleModify</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

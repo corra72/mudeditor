@@ -1,0 +1,108 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiSelectFlags</class>
+ <widget class="QDialog" name="GuiSelectFlags" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>8</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="1" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbOk" >
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbSave" >
+       <property name="text" >
+        <string>Applica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbRestore" >
+       <property name="text" >
+        <string>Ripristina</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCancel" >
+       <property name="text" >
+        <string>Annulla</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="mp_gbFlags" >
+     <property name="title" >
+      <string>Flags</string>
+     </property>
+     <property name="flat" >
+      <bool>false</bool>
+     </property>
+     <property name="checkable" >
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>mp_pbOk</tabstop>
+  <tabstop>mp_pbSave</tabstop>
+  <tabstop>mp_pbRestore</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

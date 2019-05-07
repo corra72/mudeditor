@@ -1,0 +1,6 @@
+#!/bin/bash
+install_name_tool -id @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore kreator.app/Contents/Frameworks/QtCore.framework/Versions/4/QtCore
+install_name_tool -id @executable_path/../Frameworks/QtGui.framework/Versions/4/QtGui kreator.app/Contents/Frameworks/QtGui.framework/Versions/4/QtGui
+install_name_tool -change QtCore.framework/Versions/4/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore kreator.app/Contents/MacOS/kreator
+install_name_tool -change QtGui.framework/Versions/4/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/4/QtGui kreator.app/Contents/MacOS/kreator
+install_name_tool -change QtCore.framework/Versions/4/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore kreator.app/Contents/Frameworks/QtGui.framework/Versions/4/QtGui

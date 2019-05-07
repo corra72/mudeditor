@@ -1,0 +1,49 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+  <file>images/init.png</file>
+  <file>images/klogo.png</file>
+  <file>images/logo.png</file>
+  <file>images/newarea.png</file>
+  <file>images/loadarea.png</file>
+  <file>images/savearea.png</file>
+  <file>images/saveareaas.png</file>
+  <file>images/closearea.png</file>
+  <file>images/settings.png</file>
+  <file>images/searchareas.png</file>
+  <file>images/ioarea.png</file>
+  <file>images/info.png</file>
+  <file>images/add.png</file>
+  <file>images/copy.png</file>
+  <file>images/cut.png</file>
+  <file>images/paste.png</file>
+  <file>images/edit.png</file>
+  <file>images/remove.png</file>
+  <file>images/leftarrow.png</file>
+  <file>images/rightarrow.png</file>
+  <file>images/world.png</file>
+  <file>images/coins.png</file>
+  <file>images/treasure.png</file>
+  <file>images/exit.png</file>
+  <file>images/key.png</file>
+  <file>images/skull.png</file>
+  <file>images/calc.png</file>
+  <file>images/max.png</file>
+  <file>images/quit.png</file>
+  <file>images/tester.png</file>
+  <file>images/multiple.png</file>
+  <file>conf/applies.ini</file>
+  <file>conf/aspells.ini</file>
+  <file>conf/mobactions.ini</file>
+  <file>conf/mobaffections.ini</file>
+  <file>conf/roomflags.ini</file>
+  <file>conf/teleportflags.ini</file>
+  <file>conf/containerflags.ini</file>
+  <file>conf/objflags.ini</file>
+  <file>conf/exitflags.ini</file>
+  <file>conf/resistanceflags.ini</file>
+  <file>conf/objwear.ini</file>
+  <file>conf/trapflags.ini</file>
+  <file>conf/zoneflags.ini</file>
+  <file>conf/drinkcontainerflags.ini</file>
+</qresource>
+</RCC>

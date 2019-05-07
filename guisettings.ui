@@ -1,0 +1,357 @@
+<ui version="4.0" >
+ <class>GuiSettings</class>
+ <widget class="QDialog" name="GuiSettings" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>524</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="mp_twMain" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="mp_wDirectories" >
+      <attribute name="title" >
+       <string>Directories della Aree</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>8</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="1" column="2" >
+        <widget class="QToolButton" name="mp_tbMobsDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QLabel" name="mp_labelRoomsDir" >
+         <property name="text" >
+          <string>Stanze</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" >
+        <widget class="QLineEdit" name="mp_leZonesDir" />
+       </item>
+       <item row="5" column="0" >
+        <widget class="QLabel" name="mp_labelNotesDir" >
+         <property name="text" >
+          <string>Note</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" >
+        <widget class="QToolButton" name="mp_tbShopsDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" >
+        <widget class="QToolButton" name="mp_tbRoomsDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2" >
+        <widget class="QToolButton" name="mp_tbZonesDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" >
+        <widget class="QLabel" name="mp_labelZonesDir" >
+         <property name="text" >
+          <string>Zone</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" >
+        <widget class="QToolButton" name="mp_tbItemsDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" >
+        <widget class="QLabel" name="mp_labelShopsDir" >
+         <property name="enabled" >
+          <bool>true</bool>
+         </property>
+         <property name="text" >
+          <string>Negozi</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLineEdit" name="mp_leMobsDir" />
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="mp_labelMobsDir" >
+         <property name="minimumSize" >
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Mobs</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2" >
+        <widget class="QToolButton" name="mp_tbNotesDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" >
+        <widget class="QLineEdit" name="mp_leNotesDir" />
+       </item>
+       <item row="3" column="1" >
+        <widget class="QLineEdit" name="mp_leShopsDir" >
+         <property name="enabled" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QLineEdit" name="mp_leItemsDir" />
+       </item>
+       <item row="0" column="1" >
+        <widget class="QLineEdit" name="mp_leRoomsDir" />
+       </item>
+       <item row="2" column="0" >
+        <widget class="QLabel" name="mp_labelItemsDir" >
+         <property name="text" >
+          <string>Oggetti</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" >
+        <widget class="QLineEdit" name="mp_leLogsDir" />
+       </item>
+       <item row="6" column="0" >
+        <widget class="QLabel" name="mp_labelLogsDir" >
+         <property name="layoutDirection" >
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text" >
+          <string>Log</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2" >
+        <widget class="QToolButton" name="mp_tbLogsDir" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="mp_wGeneral" >
+      <attribute name="title" >
+       <string>Generale</string>
+      </attribute>
+      <layout class="QVBoxLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QCheckBox" name="mp_cbCheckAreasAtStartup" >
+         <property name="text" >
+          <string>Alla partenza genera automaticamente la lista delle aree</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="mp_cbApplyAlways" >
+         <property name="text" >
+          <string>Applica automaticamente le modifiche ad una entita' alla chiusura della finestra</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="mp_cbAssignZoneToRoom" >
+         <property name="text" >
+          <string>Assegna automaticamente il riferimento della zona alle stanze</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>5</hsizetype>
+           <vsizetype>0</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth" >
+          <number>0</number>
+         </property>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>13</hsizetype>
+              <vsizetype>5</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text" >
+             <string>Tema di Kreator</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="mp_comboTheme" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>13</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbOk" >
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbSave" >
+       <property name="text" >
+        <string>Applica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCancel" >
+       <property name="text" >
+        <string>Annulla</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>mp_twMain</tabstop>
+  <tabstop>mp_leRoomsDir</tabstop>
+  <tabstop>mp_tbRoomsDir</tabstop>
+  <tabstop>mp_leMobsDir</tabstop>
+  <tabstop>mp_tbMobsDir</tabstop>
+  <tabstop>mp_leItemsDir</tabstop>
+  <tabstop>mp_tbItemsDir</tabstop>
+  <tabstop>mp_leShopsDir</tabstop>
+  <tabstop>mp_tbShopsDir</tabstop>
+  <tabstop>mp_leZonesDir</tabstop>
+  <tabstop>mp_tbZonesDir</tabstop>
+  <tabstop>mp_leNotesDir</tabstop>
+  <tabstop>mp_tbNotesDir</tabstop>
+  <tabstop>mp_pbOk</tabstop>
+  <tabstop>mp_pbSave</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+  <tabstop>mp_cbCheckAreasAtStartup</tabstop>
+  <tabstop>mp_cbApplyAlways</tabstop>
+  <tabstop>mp_cbAssignZoneToRoom</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

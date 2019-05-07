@@ -1,0 +1,126 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiReport</class>
+ <widget class="QDialog" name="GuiReport" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Report - TS Kreator</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="1" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbSaveAs" >
+       <property name="text" >
+        <string>Salva...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>31</width>
+         <height>31</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbClose" >
+       <property name="text" >
+        <string>Chiudi</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QTextEdit" name="mp_teReport" />
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>mp_teReport</tabstop>
+  <tabstop>mp_pbClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>mp_pbClose</sender>
+   <signal>clicked()</signal>
+   <receiver>GuiReport</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>278</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

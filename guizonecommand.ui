@@ -1,0 +1,465 @@
+<ui version="4.0" >
+ <class>GuiZoneCommand</class>
+ <widget class="QDialog" name="GuiZoneCommand" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>8</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="mp_gbMain" >
+     <property name="minimumSize" >
+      <size>
+       <width>16</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Generale</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="mp_labelLine" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Linea del file</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="mp_leLine" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>1</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="mp_labelType" >
+        <property name="minimumSize" >
+         <size>
+          <width>50</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Tipo</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="mp_comboType" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>0</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>180</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="duplicatesEnabled" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QGroupBox" name="mp_gbInit" >
+     <property name="minimumSize" >
+      <size>
+       <width>16</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="title" >
+      <string>Inizializzazione Argomenti</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="1" column="3" >
+       <widget class="QLabel" name="mp_labelArgument4" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>Argomento 4</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4" >
+       <widget class="QLineEdit" name="mp_leArgument4" >
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4" >
+       <widget class="QLineEdit" name="mp_leArgument2" >
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="mp_labelArgument1" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>Argomento 1</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" >
+       <widget class="QLabel" name="mp_labelArgument2" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize" >
+         <size>
+          <width>80</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Argomento 2</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="mp_labelArgument3" >
+        <property name="sizePolicy" >
+         <sizepolicy>
+          <hsizetype>7</hsizetype>
+          <vsizetype>5</vsizetype>
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>Argomento 3</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="mp_leArgument3" >
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="mp_leArgument1" >
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" >
+       <widget class="QToolButton" name="mp_tbArgument3" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <widget class="QToolButton" name="mp_tbArgument1" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5" >
+       <widget class="QToolButton" name="mp_tbArgument2" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5" >
+       <widget class="QToolButton" name="mp_tbArgument4" >
+        <property name="text" >
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbOk" >
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbSave" >
+       <property name="text" >
+        <string>Applica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbRestore" >
+       <property name="text" >
+        <string>Ripristina</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCancel" >
+       <property name="text" >
+        <string>Annulla</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QGroupBox" name="mp_gbComment" >
+     <property name="title" >
+      <string>Commento</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="1" >
+       <widget class="QComboBox" name="mp_comboSeparator" >
+        <property name="minimumSize" >
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>32767</height>
+         </size>
+        </property>
+        <property name="duplicatesEnabled" >
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text" >
+          <string>*!</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>;</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType" >
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>270</width>
+          <height>23</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3" >
+       <widget class="QPushButton" name="mp_pbAutoComment" >
+        <property name="text" >
+         <string>Genera</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="4" >
+       <widget class="QTextEdit" name="mp_teComment" />
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="mp_labelSeparator" >
+        <property name="minimumSize" >
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Separatore</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>mp_leLine</tabstop>
+  <tabstop>mp_comboType</tabstop>
+  <tabstop>mp_leArgument1</tabstop>
+  <tabstop>mp_tbArgument1</tabstop>
+  <tabstop>mp_leArgument2</tabstop>
+  <tabstop>mp_tbArgument2</tabstop>
+  <tabstop>mp_leArgument3</tabstop>
+  <tabstop>mp_tbArgument1</tabstop>
+  <tabstop>mp_leArgument4</tabstop>
+  <tabstop>mp_tbArgument4</tabstop>
+  <tabstop>mp_comboSeparator</tabstop>
+  <tabstop>mp_pbAutoComment</tabstop>
+  <tabstop>mp_pbOk</tabstop>
+  <tabstop>mp_pbSave</tabstop>
+  <tabstop>mp_pbRestore</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

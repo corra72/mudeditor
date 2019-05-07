@@ -1,0 +1,219 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>GuiCreateArea</class>
+ <widget class="QDialog" name="GuiCreateArea" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>214</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>8</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="1" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>131</width>
+         <height>31</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCreate" >
+       <property name="text" >
+        <string>Crea</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mp_pbCancel" >
+       <property name="text" >
+        <string>Annulla</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QGroupBox" name="mp_gbMain" >
+     <property name="title" >
+      <string/>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>8</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="4" column="0" colspan="2" >
+       <widget class="QLabel" name="mp_labelFileName" >
+        <property name="minimumSize" >
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Nome del file in cui verra' salvata la zona</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2" >
+       <widget class="QLineEdit" name="mp_leFileName" >
+        <property name="maxLength" >
+         <number>300</number>
+        </property>
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2" >
+       <widget class="QLineEdit" name="mp_leZoneName" >
+        <property name="maxLength" >
+         <number>80</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2" >
+       <widget class="QLabel" name="mp_labelZoneVNumber" >
+        <property name="minimumSize" >
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>VNumber della zona (di solito un valore compreso tra 1 e 300)</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <widget class="QLabel" name="mp_labelAreaName" >
+        <property name="minimumSize" >
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Nome della zona (ad esempio: Boscoverde [Khelben])</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLineEdit" name="mp_leZoneVNumber" >
+        <property name="minimumSize" >
+         <size>
+          <width>60</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>60</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maxLength" >
+         <number>3</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>151</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>mp_leZoneVNumber</tabstop>
+  <tabstop>mp_leZoneName</tabstop>
+  <tabstop>mp_leFileName</tabstop>
+  <tabstop>mp_pbCreate</tabstop>
+  <tabstop>mp_pbCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>mp_pbCreate</sender>
+   <signal>clicked()</signal>
+   <receiver>GuiCreateArea</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>278</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mp_pbCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>GuiCreateArea</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>369</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>179</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
