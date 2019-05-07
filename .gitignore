@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.ui
 
 # Precompiled Headers
 *.gch
@@ -30,4 +31,10 @@
 *.exe
 *.out
 *.app
+kreator.app/*
+
+# vari
+.qmake.stash
+*.moc
+.DS_Store
 Makefile
