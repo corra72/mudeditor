@@ -38,3 +38,4 @@ kreator.app/*
 *.moc
 .DS_Store
 Makefile
+.DS_Store
