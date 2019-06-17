@@ -84,12 +84,12 @@ namespace ts
     addTrapDamageType( "sleep", -3 );
     addTrapDamageType( "teleport", -2 );
     addTrapDamageType( "fire", 26 );
-    addTrapDamageType( "cold", 608 );
+    addTrapDamageType( "cold", 327 );
     addTrapDamageType( "acid", 67 );
     addTrapDamageType( "energy", 10 );
-    addTrapDamageType( "blunt", 701 );
-    addTrapDamageType( "pierce", 702 );
-    addTrapDamageType( "slash", 703 );
+    addTrapDamageType( "blunt", 331 );
+    addTrapDamageType( "pierce", 332 );
+    addTrapDamageType( "slash", 333 );
   }
 
   QString Handler::trapDamageTypeName( int did )
